@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Layer 2">
+<g id="icons">
+<path id="Vector" d="M20 12L19.1733 15.32C19.0279 15.8957 18.6944 16.4063 18.2259 16.771C17.7573 17.1357 17.1804 17.3336 16.5867 17.3333H7.41333C6.81957 17.3336 6.24269 17.1357 5.77414 16.771C5.30558 16.4063 4.97214 15.8957 4.82667 15.32L4 12" stroke="#4B4B4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M1.33301 12H22.6663" stroke="#4B4B4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M10.666 18.6667V22.6667H13.3327V18.6667" stroke="#4B4B4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Vector_4">
+<path d="M16 8H8H16Z" fill="#4B4B4D"/>
+<path d="M16 8H8" stroke="#4B4B4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_5" d="M11.9993 3.99999C12.7357 3.99999 13.3327 3.40304 13.3327 2.66666C13.3327 1.93028 12.7357 1.33333 11.9993 1.33333C11.263 1.33333 10.666 1.93028 10.666 2.66666C10.666 3.40304 11.263 3.99999 11.9993 3.99999Z" fill="#4B4B4D" stroke="#4B4B4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

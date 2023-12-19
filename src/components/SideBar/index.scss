@@ -1,0 +1,37 @@
+
+
+@use '../../utils/colors' as colors;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid colors.$athensGray;
+  background: colors.$alabaster;
+  box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.03) inset;
+  align-items: center;
+
+  .expand-icon {
+    margin-bottom: 40px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      padding: 16px 18px;
+    }
+
+    .selected {
+      border-radius: 12px;
+      background: #F2F2F4;
+    }
+  }
+}
