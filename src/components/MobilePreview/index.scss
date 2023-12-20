@@ -1,0 +1,73 @@
+@use '../../utils/colors' as colors;
+
+.preview-container {
+  flex: 4;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important;
+
+  .mobile-preview {
+    width: 350px;
+    height: 85%;
+    max-height: 720px;
+    flex-shrink: 0;
+    overflow: auto;
+    border: 12px solid;
+    border-radius: 44px;
+    padding-top: 32px;
+    position: relative;
+
+    .top-bar {
+      justify-content: space-between;
+      padding: 12px 18px;
+    }
+
+    .secondary-heading {
+      color: colors.$jumbo;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: colors.$athensGray;
+    }
+    .rectangle {
+      background-color: colors.$athensGray;
+      width: 94px;
+      height: 16px;
+      border-radius: 8px;
+    }
+
+    .oval {
+      width: 63px;
+      height: 34px;
+      flex-shrink: 0;
+      border-radius: 17px;
+      background-color: colors.$athensGray;
+    }
+
+    .long-rectangle {
+      background-color: colors.$athensGray;
+      width: 170px;
+      height: 16px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      border-radius: 0px 0px 30px 30px;
+      background: colors.$whiteColor;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+      position: sticky;
+      bottom: 0px;
+      width: 100%;
+      justify-content: space-between;
+      padding: 16px 40px 32px 40px;
+      margin-top: auto;
+    }
+  }
+}

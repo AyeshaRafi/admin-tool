@@ -1,0 +1,18 @@
+@use '../../utils/colors' as colors;
+
+.to-do {
+  padding: 16px;
+  margin: 4px 17px;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 14px;
+  background: colors.$whiteColor;
+  box-shadow: 0px 1.701px 5.104px 0px rgba(0, 0, 0, 0.06);
+
+  .text {
+    color: colors.$shark;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
