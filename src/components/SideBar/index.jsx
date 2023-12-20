@@ -1,3 +1,5 @@
+import { Stack } from '@mui/material';
+
 import home from '../../assets/sideBarIcons/home.svg';
 import reports from '../../assets/sideBarIcons/reports.svg';
 import member from '../../assets/sideBarIcons/member.svg';
@@ -52,19 +54,19 @@ function Sidebar() {
   ];
 
   return (
-    <div className="sidebar">
+    <Stack className="sidebar">
       <img src={expandCollapse} alt="expand collapse icon" className="expand-icon" />
-      <div className="sidebar-icons">
+      <Stack className="sidebar-icons">
         {icons.map((icon) => (
           <img
             key={icon.name}
             src={icon.img}
             alt={icon.name}
-            className={`${icon.name === 'homeFeed icon' ? 'selected' : ''} icon`}
+            className={`icon ${icon.name === 'homeFeed icon' ? 'selected' : ''}`}
           />
         ))}
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 }
 

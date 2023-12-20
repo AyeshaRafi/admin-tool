@@ -1,10 +1,6 @@
-
-
 @use '../../utils/colors' as colors;
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
   padding: 16px;
   border: 1px solid colors.$athensGray;
   background: colors.$alabaster;
@@ -18,20 +14,20 @@
   }
 
   .sidebar-icons {
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     align-items: center;
 
     .icon {
+      box-sizing: content-box;
       width: 24px;
       height: 24px;
       padding: 16px 18px;
+      cursor: pointer;
     }
 
     .selected {
       border-radius: 12px;
-      background: #F2F2F4;
+      background: #f2f2f4;
     }
   }
 }
