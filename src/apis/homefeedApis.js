@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseurl = 'http://127.0.0.1:8000';
+const baseurl = 'https://admin-tool-1c66a819a095.herokuapp.com';
 
 export async function fetchHomeFeedElements() {
   return await axios.get(`${baseurl}/api/v1/homefeed/homefeed-elements/`).then((response) => response.data);
