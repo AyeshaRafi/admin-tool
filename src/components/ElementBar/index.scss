@@ -1,0 +1,26 @@
+@use '../../utils/colors' as colors;
+
+.elements-bar {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  margin: 16px;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid colors.$athensGray;
+  background-color: colors.$whiteColor;
+  &:hover .icon {
+    color: colors.$shark;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: colors.$frenchGray;
+    cursor: pointer;
+  }
+
+  .margin-auto {
+    margin-left: auto;
+  }
+}
