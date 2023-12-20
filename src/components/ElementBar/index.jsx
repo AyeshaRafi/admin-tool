@@ -1,16 +1,18 @@
 import { Box, Typography } from '@mui/material';
-import { ITEM_TYPES_TO_NUMBER } from '../../utils/constants';
-import callToAction from '../../assets/callToAction.svg';
+
 import checkMark from '../../assets/checkMark.svg';
-import { ReactComponent as DeleteIcon } from '../../assets/deleteIcon.svg';
+import callToAction from '../../assets/callToAction.svg';
 import { ReactComponent as EyeIcon } from '../../assets/eyeIcon.svg';
-import { ReactComponent as ClosedEyeIcon } from '../../assets/closedEyeIcon.svg';
 import { ReactComponent as Hamburger } from '../../assets/hamburger.svg';
+import { ReactComponent as DeleteIcon } from '../../assets/deleteIcon.svg';
+import { ReactComponent as ClosedEyeIcon } from '../../assets/closedEyeIcon.svg';
+
+import { ITEM_TYPES_TO_NUMBER } from '../../utils/constants';
 import { updateHomeFeedElement } from '../../apis/homefeedApis';
 
 import './index.scss';
 
-const ElementBar = ({ title, type, isActive, uuid, fetchHomeFeedData, handleItemDelete }) => {
+function ElementBar({ title, type, isActive, uuid, fetchHomeFeedData, handleItemDelete }) {
   return (
     <Box className="elements-bar">
       <Hamburger alt="call to action" className="icon" />
@@ -37,6 +39,6 @@ const ElementBar = ({ title, type, isActive, uuid, fetchHomeFeedData, handleItem
   async function deleteElement() {
     handleItemDelete();
   }
-};
+}
 
 export default ElementBar;

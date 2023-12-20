@@ -1,11 +1,13 @@
 import React from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+
+import ElementBar from '../ElementBar';
+
 import { reorder } from '../../utils/helperFunctions';
 import { updateElementsOrder } from '../../apis/homefeedApis';
 import { deleteHomeFeedElement } from '../../apis/homefeedApis';
 
 import './index.scss';
-import ElementBar from '../ElementBar';
 
 const ItemsList = ({ elements, updateElements, fetchHomeFeedData }) => {
   const onDragEnd = async (result) => {

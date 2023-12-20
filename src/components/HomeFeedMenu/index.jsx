@@ -1,14 +1,16 @@
-import homeFeed from '../../assets/homeFeedIcon.svg';
-import mobileIcon from '../../assets/mobileIcon.svg';
-import callToAction from '../../assets/callToAction.svg';
-import checkMark from '../../assets/checkMark.svg';
+import { Box, Stack, Typography } from '@mui/material';
+
 import AddElement from '../AddElement';
 
-import './index.scss';
-import { createHomeFeedElement } from '../../apis/homefeedApis';
+import checkMark from '../../assets/checkMark.svg';
+import mobileIcon from '../../assets/mobileIcon.svg';
+import homeFeed from '../../assets/homeFeedIcon.svg';
+import callToAction from '../../assets/callToAction.svg';
 
+import { createHomeFeedElement } from '../../apis/homefeedApis';
 import { ITEM_TYPES_TO_NUMBER } from '../../utils/constants';
-import { Box, Stack, Typography } from '@mui/material';
+
+import './index.scss';
 
 function HomeFeedMenu({ fetchHomeFeedData }) {
   return (

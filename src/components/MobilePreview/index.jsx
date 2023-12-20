@@ -1,17 +1,18 @@
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 
-import calendar from '../../assets/mobilePreviewIcons/calendar.svg';
-import homePage from '../../assets/mobilePreviewIcons/homePage.svg';
+import Todo from '../ToDo';
+import CallToAction from '../CallToAction';
+
 import inbox from '../../assets/mobilePreviewIcons/inbox.svg';
 import members from '../../assets/mobilePreviewIcons/members.svg';
 import userIcon from '../../assets/mobilePreviewIcons/userIcon.svg';
+import calendar from '../../assets/mobilePreviewIcons/calendar.svg';
+import homePage from '../../assets/mobilePreviewIcons/homePage.svg';
 
 import { ITEM_TYPES_TO_NUMBER } from '../../utils/constants';
 
 import './index.scss';
-import CallToAction from '../CallToAction';
-import Todo from '../ToDo';
 
 function MobilePreview({ elements }) {
   return (

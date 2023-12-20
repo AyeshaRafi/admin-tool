@@ -1,24 +1,17 @@
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
-import plusIcon from '../../assets/plusIcon.svg';
-import callToAction from '../../assets/callToAction.svg';
-import checkMark from '../../assets/checkMark.svg';
+import { Box, Stack, Typography, Button, Menu, MenuItem } from '@mui/material';
 
-import './index.scss';
-import { Box, Stack, Typography } from '@mui/material';
+import plusIcon from '../../assets/plusIcon.svg';
+import checkMark from '../../assets/checkMark.svg';
+import callToAction from '../../assets/callToAction.svg';
+
 import { ITEM_TYPES_TO_NUMBER } from '../../utils/constants';
 
-const AddElement = ({ addElement }) => {
+import './index.scss';
+
+function AddElement({ addElement }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <Box ml="auto">
@@ -71,10 +64,18 @@ const AddElement = ({ addElement }) => {
     </Box>
   );
 
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget);
+  }
+
+  function handleClose() {
+    setAnchorEl(null);
+  }
+
   async function handleAddElement(type, title) {
     addElement(type, title);
     handleClose();
   }
-};
+}
 
 export default AddElement;

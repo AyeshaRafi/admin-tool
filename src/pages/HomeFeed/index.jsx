@@ -5,8 +5,10 @@ import MobilePreview from '../../components/MobilePreview';
 import HomeFeedMenu from '../../components/HomeFeedMenu';
 import ItemsList from '../../components/ItemsList';
 import Sidebar from '../../components/SideBar';
-import './index.scss';
+
 import { fetchHomeFeedElements } from '../../apis/homefeedApis';
+
+import './index.scss';
 
 function HomeFeed() {
   const [elements, setElements] = useState([]);
@@ -15,6 +17,7 @@ function HomeFeed() {
     // Fetch elements from API
     fetchHomeFeedData();
   }, []);
+
   return (
     <Paper className="home-feed">
       <Sidebar />
