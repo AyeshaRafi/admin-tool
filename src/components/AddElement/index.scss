@@ -1,0 +1,36 @@
+@use '../../utils/colors' as colors;
+
+.menu-button {
+  min-width: unset !important;
+  padding: 0 !important;
+  border-radius: 16px !important;
+
+  .plus-icon {
+    width: 32px;
+    height: 32px;
+    padding: 9px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: colors.$alabaster;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+.menu {
+  border-radius: 14px !important;
+  min-width: 220px !important;
+}
+
+.bar {
+  gap: 12px;
+  align-items: center;
+  font-size: 15px;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
